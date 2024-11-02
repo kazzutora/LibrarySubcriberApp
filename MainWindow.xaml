@@ -1,0 +1,71 @@
+﻿<Window x:Class="JewelryStoreApp.MainWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Jewelry Store" Height="600" Width="400">
+    <Window.Resources>
+        <!-- Стилі для елементів -->
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Height" Value="25"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="DarkBlue"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Поля для введення даних -->
+        <Label Content="Product ID:" Grid.Row="0"/>
+        <TextBox x:Name="txtProductID" Grid.Row="1"/>
+
+        <Label Content="Product Name:" Grid.Row="2"/>
+        <TextBox x:Name="txtProductName" Grid.Row="3"/>
+
+        <Label Content="Product Type:" Grid.Row="4"/>
+        <TextBox x:Name="txtProductType" Grid.Row="5"/>
+
+        <Label Content="Material:" Grid.Row="6"/>
+        <TextBox x:Name="txtMaterial" Grid.Row="7"/>
+
+        <Label Content="Weight:" Grid.Row="8"/>
+        <TextBox x:Name="txtWeight" Grid.Row="9"/>
+
+        <Label Content="Size:" Grid.Row="10"/>
+        <TextBox x:Name="txtSize" Grid.Row="11"/>
+
+        <Label Content="Price:" Grid.Row="12"/>
+        <TextBox x:Name="txtPrice" Grid.Row="13" Width="200"/>
+
+        <Button Content="Add Product" Grid.Row="12" Click="btnSave_Click" Margin="114,55,0,-54" HorizontalAlignment="Left" Width="101"/>
+    </Grid>
+</Window>
